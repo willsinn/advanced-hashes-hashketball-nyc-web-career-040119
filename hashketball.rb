@@ -129,3 +129,8 @@ end
 def find_the_player(name)
   all_players.fetch(name)
 end
+
+def shoe_size(name)
+  player = find_the_player(name)
+  player.fetch(:shoe)
+end
