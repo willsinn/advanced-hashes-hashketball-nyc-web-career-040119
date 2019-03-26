@@ -138,3 +138,7 @@ end
 def team_names
   teams.map{|t| t.fetch(:team_name)}
 end
+
+def teams
+  game_hash.values
+end
