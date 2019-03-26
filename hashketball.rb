@@ -124,3 +124,6 @@ def num_points_scored(name)
   
 end
 
+def all_players
+  game_hash[:home][:players].merge(game_hash[:away][:players])
+end
