@@ -118,8 +118,8 @@ def game_hash
 end
 
 def num_points_scored(name)
-  player=players.fetch(name)
-  player.fetch(points)
+  player=game_hash[:home][:players].merge(game_hash[:away][:players].fetch(name)
+  .fetch(points)
 end
 
 
@@ -131,4 +131,6 @@ def player_stats(player_name)
   find_the_player(player_name)
 end
 
-
+def find_the_player(name)
+  players.fetch(name)
+end
