@@ -134,3 +134,7 @@ def shoe_size(name)
   player = find_the_player(name)
   player.fetch(:shoe)
 end
+
+def team_names
+  teams.map{|t| t.fetch(:team_name)}
+end
